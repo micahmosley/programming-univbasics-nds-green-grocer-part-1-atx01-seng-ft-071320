@@ -10,10 +10,16 @@ end
 
 def consolidate_cart(cart)
   consolidated=[]
-  hash={}
-  present=0
   cart.each do |item|
-    hash= consolidated.find do |i| i[:item]==item[:item]
+    hash= consolidated.find { |i| i[:item]==item[:item]}
+    if hash== nil 
+      consolidated.push(item)
+      consolidated[-1][:count]=1
+    else 
+      consolidated.each do |j| 
+        if j[:item]==hash[:item]
+          j+=1
+      
       
     
 
