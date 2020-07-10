@@ -12,7 +12,7 @@ def consolidate_cart(cart)
   consolidated=[]
   present=0
   cart.each do |item|
-    consolidated.find do |i| 
+    consolidated.find do |i| i[:item]==item[:item]
       
     
 
