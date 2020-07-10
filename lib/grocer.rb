@@ -19,6 +19,10 @@ def consolidate_cart(cart)
       consolidated.each do |j| 
         if j[:item]==hash[:item]
           j+=1
+        end 
+      end 
+    end 
+  end 
       
       
     
