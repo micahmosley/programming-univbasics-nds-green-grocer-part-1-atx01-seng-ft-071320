@@ -12,12 +12,8 @@ def consolidate_cart(cart)
   consolidated=[]
   present=0
   cart.each do |item|
-    consolidated.find do [sort]
-      if sort[:item]==item[:item]
-        sort[:count]+=1
-        present=1
-      end
-    end 
+    consolidated.find do |sort| 
+      
     
 
 end
