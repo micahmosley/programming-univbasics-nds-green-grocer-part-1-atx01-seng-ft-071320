@@ -18,7 +18,7 @@ def consolidate_cart(cart)
     else 
       consolidated.each do |j| 
         if j[:item]==hash[:item]
-          j++
+          j[:count]+=1
         end 
       end 
     end 
